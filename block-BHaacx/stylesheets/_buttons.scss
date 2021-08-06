@@ -1,0 +1,27 @@
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.3rem 2rem;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+  transition: all 200ms ease-in-out;
+  font-size: 1rem;
+  border-radius: 50px;
+  font-weight: 400;
+  margin-top: 1.5rem;
+}
+.btn-primary {
+  border: 2px solid black;
+}
+.btn:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  color: $textDark !important;
+}
+.btn-secondary {
+  color: $textDark;
+  background-color: white;
+  padding: 0.3rem 4rem;
+}

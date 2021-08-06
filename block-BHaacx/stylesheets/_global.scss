@@ -1,0 +1,51 @@
+/* General */
+html {
+  font-size: 16px;
+}
+body {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Padding */
+.padding {
+  padding: 1rem 3rem;
+}
+
+/* Active Link */
+#active {
+  color: $mustardBackground;
+}
+
+/* Nav and General Links Hover */
+a:hover {
+  color: $mustardBackground;
+}
+a {
+  text-decoration: none;
+}
+
+/* Full Width */
+.width-full {
+  width: 100%;
+}
+
+/* Clearfix */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
