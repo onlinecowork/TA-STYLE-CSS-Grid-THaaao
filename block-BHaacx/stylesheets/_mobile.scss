@@ -1,0 +1,139 @@
+@media screen and (max-width: 768px) {
+  // General
+  html {
+    font-size: 12px;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.7fr 0.5fr 0.75fr 0.5fr 0.4fr 0.4fr 0.4fr 0.4fr 0.75fr 0.6fr 0.6fr 0.75fr 1fr 1fr 0.7fr 0.75fr 0.5fr;
+    grid-template-areas: "header" "image-hero" "hero-text" "about" "image-about" "skills" "interface-design" "media-strategy" "mobile-app" "coding" "image-experience" "experience" "education" "image-education" "form" "image-contact" "contact-details" "map" "footer";
+    gap: 0;
+  }
+  .mobile-flex-50 {
+    flex: 0 1 50%;
+  }
+  .date {
+    padding-left: 1rem;
+  }
+
+  // Mobile Menu and Header
+  #toggle:checked ~ .nav {
+    display: block;
+  }
+  .header h1 {
+    position: fixed;
+    z-index: 99;
+    background-color: white;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+  }
+  .bars {
+    display: inline-block;
+    z-index: 99;
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+  }
+  .nav {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    background-color: white;
+    font-size: 5rem;
+  }
+  .nav ul {
+    display: block;
+    text-align: center;
+    margin-top: 14rem;
+  }
+  .nav h5 {
+    font-size: 1.5rem;
+  }
+  .nav .header {
+    position: relative;
+    grid-area: header;
+    background-color: white;
+  }
+
+  // Grid Blocks
+  .image-hero {
+    grid-area: image-hero;
+  }
+  .hero-text {
+    grid-area: hero-text;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .about {
+    grid-area: about;
+  }
+  .image-about {
+    grid-area: image-about;
+  }
+  .skills {
+    grid-area: skills;
+  }
+  .interface-design {
+    grid-area: interface-design;
+  }
+  .media-strategy {
+    grid-area: media-strategy;
+  }
+  .mobile-app {
+    grid-area: mobile-app;
+  }
+  .coding {
+    grid-area: coding;
+  }
+  .image-experience {
+    grid-area: image-experience;
+  }
+  .experience {
+    grid-area: experience;
+    & .date {
+      padding-left: 1rem;
+    }
+  }
+  .education {
+    grid-area: education;
+    & .date {
+      padding-left: 0;
+    }
+  }
+  .image-education {
+    grid-area: image-education;
+  }
+  .form {
+    grid-area: form;
+    & .btn {
+      margin-bottom: 2rem;
+      display: block;
+      text-align: center;
+    }
+  }
+  .image-contact {
+    grid-area: image-contact;
+  }
+  .contact-details {
+    grid-area: contact-details;
+  }
+  .map {
+    grid-area: map;
+    padding: 0.5rem 1rem;
+    & iframe {
+      width: 100%;
+    }
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
