@@ -1,0 +1,50 @@
+/* Headings*/
+h1 {
+  font-weight: 700;
+  & a {
+    color: $textDark;
+  }
+}
+h2 {
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: $textDark;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+h3 {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+h4 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+h5 {
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+h6 {
+  font-weight: 300;
+  color: $mustardBackground;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-accent {
+  color: $mustardBackground;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.font-0 {
+  font-size: 0;
+}
