@@ -1,6 +1,6 @@
 /* General */
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 body {
   font-size: 1rem;
@@ -23,61 +23,61 @@ body {
   display: flex;
 }
 .column {
-    flex-direction: column;
+  flex-direction: column;
 }
 .wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .center {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .justify-start {
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 .justify-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 .justify-end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 .align-start {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 .align-center {
-    align-items: center;
+  align-items: center;
 }
 .align-end {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 /* Columns */
 .flex-15 {
-    flex: 0 1 15%;
+  flex: 0 1 15%;
 }
 .flex-20 {
-    flex: 0 1 20%;
+  flex: 0 1 20%;
 }
 .flex-25 {
-    flex: 0 1 25%;
+  flex: 0 1 25%;
 }
 .flex-30 {
-    flex: 0 1 30%;
+  flex: 0 1 30%;
 }
 .flex-40 {
-    flex: 0 1 40%;
+  flex: 0 1 40%;
 }
 .flex-48 {
-    flex: 0 1 48%;
+  flex: 0 1 48%;
 }
 .flex-50 {
-    flex: 0 1 50%;
+  flex: 0 1 50%;
 }
 .flex-60 {
-    flex: 0 1 60%;
+  flex: 0 1 60%;
 }
 .grow {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 /* Padding */
@@ -103,27 +103,27 @@ body {
   border: 1px solid black;
 }
 .btn:hover {
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    opacity: 0.8;
-    color: #ffffff!important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  color: #ffffff !important;
 }
 .btn-primary:hover {
-    background-color: var(--secondary);
+  background-color: var(--secondary);
 }
 
 /* Active Link */
 .active {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 /* Nav and General Links Hover */
 a:hover {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 /* Full Width */
 .width-full {
-    width: 100%;
+  width: 100%;
 }
 
 /* Headings*/
@@ -135,24 +135,24 @@ a:hover {
   text-transform: capitalize;
 }
 .heading-secondary {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
 /* Text */
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 .text-right {
-    text-align: right;
+  text-align: right;
 }
 .text-accent {
-    color: var(--accent);
+  color: var(--accent);
 }
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .font-0 {
-    font-size: 0;
+  font-size: 0;
 }
 
 /* Clearfix */
@@ -165,17 +165,3 @@ a:hover {
   clear: both;
 }
 
-/* 
-1)Common Tags that I forget:
-<nav>
-<fieldset>
-<figure>
-<article>
-<aside>
-
-2) Use max-width, max-height for images and tables
-
-3) Add viewport meta tag to HTML
-
-4) Code in 'rem'
- */

@@ -1,86 +1,92 @@
 @import "variables";
 @import "reset";
-@import "general";
 @import "headings";
-@import "small-screen";
-@import "medium";
+@import "general";
 
-
-//General 
-h2, p, a {
-    padding: 0.3rem;
-    padding-left: 1rem;
+// General
+h2,
+p,
+a {
+  padding: 0.3rem;
+  padding-left: 1rem;
 }
 a {
-    color: #ff0000;
-    display: block;
+  color: #ff0000;
+  display: block;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 // Container Extra
 .container {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "menu menu menu"
-                        "item1 cat red1"
-                        "chart blue1 last";             
-};
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "menu menu menu"
+    "item1 cat red1"
+    "chart blue1 last";
+}
 
 // Menu
 li {
-    background-color: white;
-    text-align: center;
-    padding: 0.5rem;
+  background-color: white;
+  text-align: center;
+  padding: 0.5rem;
 }
 li a {
-    color: rgb(84, 174, 209);
-    font-size: 1.2rem;
-    &:hover {
-        color: $background;
-    }
+  color: rgb(84, 174, 209);
+  font-size: 1.2rem;
+  &:hover {
+    color: $background;
+  }
 }
 .menu {
-    grid-area: menu;
-    padding-left: 3rem;
-    padding-right: 3rem;
+  grid-area: menu;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
-                   
+
 // Items
-
 .item {
-    background-color: white;
-    border-top: 5px solid $blue;
-    color: black;
+  background-color: white;
+  border-top: 5px solid $blue;
+  color: black;
 }
-
-
 .cat {
-    grid-row: span 3;
-    & img {
-        border-radius: 50%;
-        padding: 2rem;
-    }
+  grid-row: span 3;
+  & img {
+      max-width: 500px;
+    border-radius: 50%;
+    padding: 2rem;
+  }
 }
 .red1 {
-    & a {
-        background-color: red;
-        color: white;
-    }
-    
+  & a {
+    background-color: red;
+    color: white;
+  }
 }
 .blue1 {
-    & h2 {
-        background-color: $blue;
-        color: white;
-    }
+  & h2 {
+    background-color: $blue;
+    color: white;
+  }
 }
 
 .chart {
-    grid-row: span 2;
-    display: grid;
-    & img {
-        max-width: 300px;
-        margin: 0 auto;
-        padding: 1rem;
-    }
+  grid-row: span 2;
+  display: grid;
+  & img {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
 }
+
+@import "medium-screen";
+@import "mobile";
